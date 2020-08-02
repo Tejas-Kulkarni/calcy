@@ -1,0 +1,56 @@
+<htmL>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+        <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet"> 
+        <style>
+            body{
+                text-align: center;
+                background-color: #ff9500;
+                color:#505050;
+            }
+            label{
+                font-family: 'Permanent Marker', cursive;
+                font-size: large;
+            }
+            input{
+                width:80%;
+            }
+            .t{
+                background-color:blue;
+                color:white;
+                font-size:large;
+            }
+            p{
+                color:#505050;
+                font-family: 'Permanent Marker', cursive;
+                font-size: large;  
+            }
+            .hfd{
+                color:white;
+                font-size:30;
+            }
+        </style>
+    </head>
+    <body>
+        <center>
+            <label>Enter First Number</label><br>
+            <input type="number" id="num1"><br>
+            <label>Enter Second Number</label><br>
+            <input type="number" id="num2"><br>
+            <br>
+            <input class = "t" type="submit" value="Submit" onclick="f1()"><br>
+            <label>Sum of two numbers</label><br>
+            <input type="number" id="opt"><br>
+            <p>Ye Aisa Hich Time Pass Ke Liye Kiya Hai.<br>By The Way<br><p class="hfd">Happy FriendShip Day</p></p>
+        </center>
+        <script>
+            function f1(){
+                var num1 = Number(document.getElementById("num1").value);
+                var num2 = Number(document.getElementById("num2").value);
+                var sum  = num1 + num2
+                document.getElementById("opt").value = sum
+            }
+        </script>
+    </body>
+</htmL>
